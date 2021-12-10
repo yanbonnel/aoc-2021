@@ -7,8 +7,9 @@ mod day6;
 mod day7;
 mod day8;
 mod day9;
+mod day10;
 
 fn main() {
-    let input = include_str!("./day9.input");
-    day9::execute(input);
+    let input = include_str!("./day10.input");
+    day10::execute(input);
 }
