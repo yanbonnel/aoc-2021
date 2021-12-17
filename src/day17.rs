@@ -66,7 +66,7 @@ pub fn execute(input: &str) {
     let target_y = (pos[1][0], pos[1][1]);
 
     let mut possibilities: Vec<_> = (0..=target_x.1).flat_map(|x|
-        (0..=(-target_y.0)).map(move |y|
+        (target_y.0..=(-target_y.0)).map(move |y|
             Path {
                 highest_y: 0,
                 current_pos: (0, 0),
@@ -84,4 +84,6 @@ pub fn execute(input: &str) {
     let max_y = possibilities.iter().map(|path| path.highest_y).max().unwrap();
 
     println!("Step 1 : {}", max_y);
+
+    println!("Step 2 : {}", possibilities.len());
 }
