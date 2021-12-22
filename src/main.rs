@@ -15,8 +15,13 @@ mod day14;
 mod day15;
 mod day16;
 mod day17;
+mod day18;
+mod day19;
+mod day20;
+mod day21;
+mod day22;
 
 fn main() {
-    let input = include_str!("./day17.input");
-    day17::execute(input);
+    let input = include_str!("./day22.input");
+    day22::execute(input);
 }
